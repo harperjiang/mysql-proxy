@@ -7,7 +7,7 @@
 
 #include "slave_proxy.h"
 
-SlaveProxy::SlaveProxy() {
+SlaveProxy::SlaveProxy(char* indicator) {
 	// TODO Auto-generated constructor stub
 
 }

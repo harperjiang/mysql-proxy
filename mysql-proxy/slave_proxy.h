@@ -8,12 +8,14 @@
 #ifndef SLAVEPROXY_H_
 #define SLAVEPROXY_H_
 
+#include "sql/rpl_mi.h"
+
 class SlaveProxy {
 
 private:
 	Master_info *master;
-	MySQL *sourceMysql;
-	MySQL *targetMysql;
+//	MySQL *sourceMysql;
+//	MySQL *targetMysql;
 
 	int ioThreadId;
 	int sqlThreadId;
@@ -21,7 +23,6 @@ private:
 public:
 	SlaveProxy(char* indicator);
 	virtual ~SlaveProxy();
-
 
 };
 
